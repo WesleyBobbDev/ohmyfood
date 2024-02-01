@@ -1,1 +1,67 @@
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 400px) {
+  * header h1 {
+    text-align: center;
+    font-weight: 800;
+    padding: 16px;
+    font-size: 2rem;
+  }
+  * .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    gap: 8px;
+    padding: 8px;
+  }
+  * .explore__container {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  * .explore__container h2 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-top: 24px;
+    font-family: Roberto, sans-serif;
+  }
+  * .explore__container p {
+    margin-top: 24px;
+    width: 80%;
+    text-align: center;
+  }
+  * .explore__container button {
+    border: none;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 15px 20px;
+    color: #FFF;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    margin: 24px 0 32px 0;
+  }
+  * .how-it-works {
+    background-color: rgb(221, 214, 214);
+  }
+  * .how-it-works h2 {
+    padding: 16px;
+    font-weight: 800;
+    font-size: 1.125rem;
+  }
+  * .how-it-works .button__selection__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 44px;
+  }
+  * .how-it-works .button__selection__container .button__selection {
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=styles.css.map */
