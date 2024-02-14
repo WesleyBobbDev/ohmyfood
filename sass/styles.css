@@ -1,3 +1,7 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 .logo__header {
   width: 100%;
 }
@@ -138,14 +142,14 @@
 }
 
 .footer__container {
-  background-color: #5c5b5b;
+  background-color: #2d2d2d;
   color: #fff;
   font-size: 0.9rem;
   padding: 20px;
 }
 .footer__container .footer__title {
   font-size: 24px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Shrikhand", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
 }

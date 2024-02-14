@@ -3,6 +3,9 @@ $secondary--color: #ff79da;
 $third--color: #99e2d0;
 $white: #fff;
 
+html{
+  font-family: 'Roboto', sans-serif;
+}
 //Header Start
 .logo__header {
   width: 100%;
@@ -163,15 +166,16 @@ $white: #fff;
   }
 }
 
+//Footer Start 
 .footer__container {
-  background-color: #5c5b5b;
+  background-color: #2d2d2d;
   color: $white;
   font-size: 0.9rem;
   padding: 20px;
 
   .footer__title {
     font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Shrikhand', sans-serif;
     font-weight: 700;
     margin-bottom: 1rem;
   }
@@ -198,6 +202,7 @@ $white: #fff;
     gap: 8px;
   }
 }
+// Footer End
 
 // Restaurants end
 
