@@ -6,6 +6,40 @@ $white: #fff;
 html{
   font-family: 'Roboto', sans-serif;
 }
+
+// Loading Circle
+.loading{
+  animation: Disappear 1s ease-out 1.6s;
+  animation-fill-mode: forwards;
+
+  .loading__circle::before{
+    z-index: 10;
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin: -2.5rem -2.5rem;
+    border-radius: 50%;
+    border: 6px solid $primary--color;
+    border-top-color: $secondary--color;
+  }
+}
+
+@keyframes Disappear{
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+// Loading Circle end
+
+
 //Header Start
 .logo__header {
   width: 100%;
@@ -56,6 +90,11 @@ html{
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
     margin: 24px 0 32px 0;
+
+    a{
+      text-decoration: none;
+      color: $white;
+    }
   }
 }
 
@@ -83,11 +122,15 @@ html{
       border: none;
       padding: 20px;
       padding-left: 30px;
-      background: lightgray;
+      background: #f4f4f4;
       display: flex;
       gap: 20px;
       position: relative;
       white-space: nowrap;
+    }
+
+    .button__title{
+      font-weight: bold;
     }
 
     .button__number {
@@ -207,9 +250,52 @@ html{
 // Restaurants end
 
 // Start tablet version
-
-// Desktop version
 @media screen and (min-width: 768px) {
+  .logo__header {
+    width: 100%;
+
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .explanation {
+    padding: 30px;
+    height: 280px;
+
+    .button__selection__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .restaurant__container {
+    .venue__container > div {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+
+      .restaurant__venue {
+        margin: 0;
+        flex: 1 1 40%;
+      }
+    }
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row-reverse;
+    
+    .footer__content {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}
+// Desktop version
+@media screen and (min-width: 1024px) {
   .logo__header {
     width: 100%;
 

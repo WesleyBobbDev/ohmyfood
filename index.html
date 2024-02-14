@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="sass/styles.css">
 </head>
 <body>
+    <!-- Loading Circle -->
+    <div class="loading">
+        <div class="loading__circle">
+
+        </div>
+    </div>
+    <!-- Loading circle end -->
     <!-- Header Start -->
     <header class="logo__header">
         <div class="logo">
@@ -38,7 +45,7 @@
     <section class="explore__container">
         <h2>Book the meal you want</h2>
         <p>Discover our carefully selected high-end restaurants</p>
-        <button>Explore our restaurants</button>
+        <button><a href="#restaurant__section">Explore our restaurants</a></button>
     </section>
     <!-- Meal Booking End -->
 
@@ -73,12 +80,12 @@
     <!-- How It Works End -->
 
     <!-- Restaurant Locations Start -->
-    <div class="restaurant__container">
+    <div class="restaurant__container" id="restaurant__section">
         <section class="venue__container">
             <h2 class="restaurant__title">Restaurants</h2>
             <div>
                 <article class="restaurant__venue">
-                    <a href="/restuarants/kitchen.html"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of Kitchen West"></a>
+                    <a href="kitchen.html"target="blank"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image of Kitchen West"></a>
                     <div class="card-content">
                         <div class="card-txt">
                             <h5 class="card-title">Kitchen West</h5>
@@ -89,7 +96,7 @@
                 </article>
         
                 <article class="restaurant__venue">
-                    <a href="restuarants/elderflower.html"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image of Elderflower restaurant"></a>
+                    <a href="elderflower.html"target="_blank"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image of Elderflower restaurant"></a>
                     <div class="card-content">
                         <div class="card-txt">
                             <h5 class="card-title">Elderflower</h5>
@@ -100,7 +107,7 @@
                 </article>
         
                 <article class="restaurant__venue">
-                    <a href="/restuarants/shoreditch.html"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt=""></a>
+                    <a href="shoreditch.html"target="_blank"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt=""></a>
                     <div class="card-content">
                         <div class="card-txt">
                             <h5 class="card-title">Shoreditch Canteen</h5>
@@ -111,12 +118,13 @@
                 </article>
         
                 <article class="restaurant__venue">
-                    <a href="bayleaf.html"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=""></a>
+                    <a href="bayleaf.html"target="_blank"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=""></a>
                     <div class="card-content">
                         <div class="card-txt">
                             <h5 class="card-title">The Bay Leaf</h5>
                             <p class="class-subtitle">Hoxton</p>
                         </div>        
+                        <i class="fa-regular fa-heart"></i>
                     </div>
                 </article>
 
