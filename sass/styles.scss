@@ -7,17 +7,28 @@ html{
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  position: relative;
+}
+
 // Loading Circle
 .loading{
-  animation: Disappear 1s ease-out 1.6s;
-  animation-fill-mode: forwards;
+    animation: Disappear 1s ease-out 1.6s;
+    animation-fill-mode: forwards;
+    background-color: white;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 
   .loading__circle::before{
     z-index: 10;
     content: "";
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     height: 4rem;
     width: 4rem;
@@ -35,6 +46,7 @@ html{
 
   100%{
     opacity: 0;
+    display: none;
   }
 }
 // Loading Circle end
@@ -177,6 +189,15 @@ html{
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 24px 0;
+
+    .new{
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        background-color: $third--color;
+        padding: 2px 12px;
+        color: darkgreen;
+    }
 
     img {
       width: 100%;
