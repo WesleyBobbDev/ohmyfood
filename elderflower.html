@@ -18,139 +18,182 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-        <!-- Header Start -->
-        <header class="header">
-            <div class="logo">
-                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood title logo">
-            </div>
-        </header>
-        <!-- Header End -->
-
-        <div class="main__page__image">
-            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Picture of Elderflower restaurant">
+       <!-- Header Start -->
+       <header class="header">
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img class="logo__image" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood title logo">
         </div>
-        <!-- Image End-->
-
-        <!-- Menu Start -->
-        <article class="bay-leaf__menu">
-            <div class="container wrapped__container">
-                <main class="menu">
-                    <div class="menu__title">
-                        <h2 class="restaurant__title">Elderflower</h2>
-                        <i class="fa-regular fa-heart menu-heart"></i>
-                    </div>
-                    <!-- Starters Start -->
-                    <h3 class="menu__title"><span class="underlined">Starters</span></h3>
-                    <ul class="starters-dishes">
-                        <li class="dish">
-                            <h4 class="dish__name">Brisket ravioli</h4>
-                            <p class="dish__description">Served with truffle cream
-                                <span class="dish__price">£25</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Beluga caviar</h4>
-                            <p class="dish__description">Served on buckwheat bilinis
-                                <span class="dish__price">£35</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Lobster with pumpkin foam</h4>
-                            <p class="dish__description">And orange zest
-                                <span class="dish__price">£20</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Duck terrine</h4>
-                            <p class="dish__description">Fig jam and toasted brioche
-                                <span class="dish__price">£35</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <!-- Starters End -->
-
-                    <!-- Mains Start -->
-                    <h3 class="menu__title"><span class="underlined">Mains</span></h3>
-                    <ul class="starters-dishes">
-                        <li class="dish">
-                            <h4 class="dish__name">Scallops</h4>
-                            <p class="dish__description">On a bed of celariac purree
-                                <span class="dish__price">£40</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Pan-fried langoustine</h4>
-                            <p class="dish__description">With sweet potato mash
-                                <span class="dish__price">£35</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Braised oxtail</h4>
-                            <p class="dish__description">With lemon-zested fried rice
-                                <span class="dish__price">£44</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <!-- Mains End -->
-
-                    <!-- Dessert Start -->
-                    <h3 class="menu__title"><span class="underlined">Desserts</span></h3>
-                    <ul class="starters-dishes">
-                        <li class="dish">
-                            <h4 class="dish__name">Chocolate parfait</h4>
-                            <p class="dish__description">With salted-caramel ice cream
-                                <span class="dish__price">£18</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Rum baba</h4>
-                            <p class="dish__description">With lemon coulis
-                                <span class="dish__price">£22</span>
-                            </p>
-                        </li>
-                        <li class="dish">
-                            <h4 class="dish__name">Lemon meringue pie</h4>
-                            <p class="dish__description">Deconstructed
-                                <span class="dish__price">£23</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <!-- Desserts End -->
-                    <div class="order__button">
-                        <button>Order</button>
-                    </div>
-                </main>
-            </div>
-        </article>
-        <!-- Menu End -->
-
-        <!-- Order Button Start -->
-
-        <!-- Order Button End --> 
     </header>
+    <!-- Header End -->
 
-    <!-- Footer Start -->
-    <footer class="footer__container">
-        <h2 class="footer__title"><a href="index.html">ohmyfood</a></h2>
-        
-        <ul class="footer__content">
-            <li class="footer-icon">
-                <i class="fa-solid fa-utensils"></i>
-                <p><a href="#">Suggest a Restaurant</a></p>
-            </li>
+    <div class="main__page__image">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Picture of Kitchen West restaurant">
+    </div>
+    <!-- Image End-->
+
+    <!-- Menu Start -->
+    <article class="bay-leaf__menu">
+        <div class="container wrapped__container">
+            <main class="menu">
+                <div class="menu__title">
+                    <h2 class="restaurant__title">Kitchen West</h2>
+                    <input type="checkbox" id="heart__checkbox" class="heart__checkbox">
+                    <label for="heart__checkbox" class="heart__label">
+                        <i class="fa-regular fa-heart btn"></i>
+                    </label>
+                </div>
+                <!-- Starters Start -->
+                <h3 class="menu__title"><span class="underlined">Starters</span></h3>
+                <ul class="starters-dishes">
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Brisket ravioli</h4>
+                            <p>Served with truffle cream</p>
+                        </div>
+                        <p class="dish__price">£25</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Beluga caviar</h4>
+                            <p>Served on buckwheat blinis</p>
+                        </div>
+                        <p class="dish__price">£35</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Lobster with pumpkin foam</h4>
+                            <p>WAnd orange zest</p>
+                        </div>
+                        <p class="dish__price">£20</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Duck terrine</h4>
+                            <p>Fig jam and toasted brioche</p>
+                        </div>
+                        <p class="dish__price">£35</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Starters End -->
+
+                <!-- Mains Start -->
+                <h3 class="menu__title"><span class="underlined">Mains</span></h3>
+                <ul class="starters-dishes">
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Scallops</h4>
+                            <p>On a bed of celeriac purée</p>
+                        </div>
+                        <p class="dish__price">£40</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Pan-fried langoustine</h4>
+                            <p>With sweet potato mash</p>
+                        </div>
+                        <p class="dish__price">£35</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Braised oxtail</h4>
+                            <p>With lemon-zested wild rice</p>
+                        </div>
+                        <p class="dish__price">£44</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Mains End -->
+
+                <!-- Dessert Start -->
+                <h3 class="menu__title"><span class="underlined">Desserts</span></h3>
+                <ul class="starters-dishes">
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Chocolate parfait</h4>
+                            <p>With salted caramel ice cream</p>
+                        </div>
+                        <p class="dish__price">£18</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Rum baba</h4>
+                            <p>With lemon coulis</p>
+                        </div>
+                        <p class="dish__price">£22</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                    <li class="dish">
+                        <div class="dish__description">
+                            <h4 class="dish__name">Lemon meringue pie</h4>
+                            <p>Deconstructed</p>
+                        </div>
+                        <p class="dish__price">£23</p>
+                        <div class="meal__check">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Desserts End -->
+                <div class="order__button">
+                    <button>Order</button>
+                </div>
+            </main>
+        </div>
+    </article>
+    <!-- Bay Leaf Menu End -->
+
+    <!-- Order Button Start -->
+
+    <!-- Order Button End --> 
+</header>
+
+<!-- Footer Start -->
+<footer class="footer__container">
+    <h2 class="footer__title"><a href="index.html">ohmyfood</a></h2>
     
-            <li class="footer-icon">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <p><a href="#">Become a partner</a></p>
-            </li>
+    <ul class="footer__content">
+        <li class="footer-icon">
+            <i class="fa-solid fa-utensils"></i>
+            <p><a href="#">Suggest a Restaurant</a></p>
+        </li>
 
-            <li><a href="#">Legal notice</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        
-    </footer>
-    <!-- Footer End -->
+        <li class="footer-icon">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p><a href="#">Become a partner</a></p>
+        </li>
+
+        <li><a href="#">Legal notice</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    
+</footer>
+<!-- Footer End -->
 </body>
 </html>

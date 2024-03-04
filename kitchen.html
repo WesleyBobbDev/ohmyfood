@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/kitchen.css">
-    <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/kitchen.css">
 </head>
 <body>
         <!-- Header Start -->
         <header class="header">
             <div class="logo">
                 <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood title logo">
+                <img class="logo__image" src="images/logo/ohmyfood@2x.svg" alt="ohmyfood title logo">
             </div>
         </header>
         <!-- Header End -->
@@ -38,31 +38,43 @@
                 <main class="menu">
                     <div class="menu__title">
                         <h2 class="restaurant__title">Kitchen West</h2>
-                        <i class="fa-regular fa-heart menu-heart"></i>
+                        <input type="checkbox" id="heart__checkbox" class="heart__checkbox">
+                        <label for="heart__checkbox" class="heart__label">
+                            <i class="fa-regular fa-heart btn"></i>
+                        </label>
                     </div>
                     <!-- Starters Start -->
                     <h3 class="menu__title"><span class="underlined">Starters</span></h3>
                     <ul class="starters-dishes">
                         <li class="dish">
-                            <h4 class="dish__name">Smoked Salmon</h4>
-                            <p class="dish__description">With beetroot and horseradish dressing
-                                <span class="dish__price">£25</span>
-                            </p>
-                            <div class="overlay">
-								<i class="fas fa-check-circle check"></i>
-							</div>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Smoked Salmon</h4>
+                                <p>With beetroot and horseradish dressing</p>
+                            </div>
+                            <p class="dish__price">£25</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Ham hock terrine</h4>
-                            <p class="dish__description">With piccallilli
-                                <span class="dish__price">£35</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Ham Hock Terrine</h4>
+                                <p>With piccalilli</p>
+                            </div>
+                            <p class="dish__price">£35</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Poached Egg</h4>
-                            <p class="dish__description">With asparagus and hollandaise
-                                <span class="dish__price">£20</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Poached egg</h4>
+                                <p>With asparagus and hollandaise</p>
+                            </div>
+                            <p class="dish__price">£20</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                     </ul>
                     <!-- Starters End -->
@@ -71,22 +83,34 @@
                     <h3 class="menu__title"><span class="underlined">Mains</span></h3>
                     <ul class="starters-dishes">
                         <li class="dish">
-                            <h4 class="dish__name">Beef fillet with herb butter</h4>
-                            <p class="dish__description">Served with a vegetable medley
-                                <span class="dish__price">£40</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Beef fillet with herb butter</h4>
+                                <p>Served with a vegetable medley</p>
+                            </div>
+                            <p class="dish__price">£40</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Braised oxtail cottage pie</h4>
-                            <p class="dish__description">With black truffle and parsnip purree
-                                <span class="dish__price">£35</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Braised oxtail cottage pie</h4>
+                                <p>With black truffle and a parsnip purree</p>
+                            </div>
+                            <p class="dish__price">£35</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Fillet of turbot</h4>
-                            <p class="dish__description">With citrus dressing
-                                <span class="dish__price">£44</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Fillet of turbot</h4>
+                                <p>With citrus dressing</p>
+                            </div>
+                            <p class="dish__price">£44</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                     </ul>
                     <!-- Mains End -->
@@ -95,22 +119,34 @@
                     <h3 class="menu__title"><span class="underlined">Desserts</span></h3>
                     <ul class="starters-dishes">
                         <li class="dish">
-                            <h4 class="dish__name">Treacle tart</h4>
-                            <p class="dish__description">With cornish clotted cream
-                                <span class="dish__price">£18</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Treacle tart</h4>
+                                <p>With cornish clotted cream</p>
+                            </div>
+                            <p class="dish__price">£18</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Lemon posset</h4>
-                            <p class="dish__description">With shortbread biscuit
-                                <span class="dish__price">£22</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Lemon posset</h4>
+                                <p>With shortbread biscuit</p>
+                            </div>
+                            <p class="dish__price">£22</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                         <li class="dish">
-                            <h4 class="dish__name">Chocolate mousse</h4>
-                            <p class="dish__description">With a hint of chilli and a hazelnut tuile
-                                <span class="dish__price">£23</span>
-                            </p>
+                            <div class="dish__description">
+                                <h4 class="dish__name">Chocolate mousse</h4>
+                                <p>With a hint of chilli and a hazelnut tuile</p>
+                            </div>
+                            <p class="dish__price">£23</p>
+                            <div class="meal__check">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
                         </li>
                     </ul>
                     <!-- Desserts End -->

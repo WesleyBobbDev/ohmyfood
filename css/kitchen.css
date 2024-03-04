@@ -10,7 +10,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 25%;
+}
+.header .logo__image {
+  margin: 0 auto;
 }
 
 .main__page__image img {
@@ -23,7 +25,6 @@
 .wrapped__container {
   padding: 0 20px;
   position: relative;
-  top: -2rem;
   padding-top: 1.8rem;
   border-radius: 30px 30px 0 0;
   background: rgba(244, 244, 244, 0.9450980392);
@@ -36,13 +37,45 @@
   margin-top: 28px;
   font-size: 1.125rem;
 }
+.menu__title .btn {
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+.menu__title .btn:hover {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation: heart 500ms ease-in-out forwards;
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__title .heart__checkbox {
+  display: none;
+}
+.menu__title .heart__checkbox:checked + .heart__label {
+  color: #9356dc;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-clip: padding-box;
+  background-clip: border-box;
+  font-weight: bold;
+  transform: scale(1.25);
+}
 .menu__title .menu-heart {
   font-size: 1.35rem;
 }
 
 .underlined {
-  border-bottom: 4px solid #99E2D0;
-  width: 10%;
+  border-bottom: 4px solid #99e2d0;
+  width: 4%;
   padding-bottom: 4px;
 }
 
@@ -56,43 +89,55 @@
 
 .dish {
   background-color: white;
-  position: relative;
   list-style-type: none;
   border: solid 1px white;
   border-radius: 0.8rem;
-  margin: 0.8rem 0;
-  padding: 0.8rem 1.2rem 0.7rem 0;
+  margin: 1rem 0;
+  animation-delay: 1s;
+  animation: showMenuItems 750ms cubic-bezier(0.3, 0.5, 0.5, 0.9) both;
+  transform: scale(0);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.dish__description {
   padding: 16px;
 }
-.dish.overlay {
+.dish__price {
+  font-weight: bold;
+  align-self: flex-end;
+  padding: 16px;
+  margin-left: auto;
+}
+.dish .meal__check {
+  background-color: #99e2d0;
+  color: white;
+  font-size: 28px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  bottom: 4.8rem;
-  left: 100%;
-  right: 0;
-  background-color: #99E2D0;
-  border-radius: 0 1rem 1rem 0;
+  align-items: center;
+  transform: translateX(100px);
   width: 0;
-  height: 4.27rem;
-  overflow: hidden;
-  transition: 0.3s linear;
+  transition: all 500ms;
+}
+.dish:hover .meal__check {
+  width: 80px;
+  transform: translateX(0);
 }
 
-.dish__name {
+@keyframes showMenuItems {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.dish__name,
+.disc__description {
   margin-bottom: 0.4rem;
   font-weight: 800;
   font-size: 1.125rem;
-}
-
-.disc__description {
-  margin-bottom: 0.4rem;
-}
-
-.dish__price {
-  font-weight: bold;
-  float: right;
 }
 
 .order__button {
@@ -109,6 +154,24 @@
   margin: 24px 0 32px 0;
   width: 180px;
   font-weight: 400;
+}
+
+button {
+  border: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 30px;
+  margin: 24px 0 32px 0;
+}
+button:hover {
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.925;
+}
+button a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer__container {
