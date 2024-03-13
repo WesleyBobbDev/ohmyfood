@@ -181,16 +181,10 @@ button a {
   padding: 20px;
 }
 .footer__container .footer__title {
+  font-size: 20px;
   font-family: "Shrikhand", sans-serif;
-  font-style: italic;
-  font-size: 1.125rem;
-}
-.footer__container .footer__title a {
-  text-decoration: none;
-  color: white;
-}
-.footer__container .footer__content {
-  margin-top: 12px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 .footer__container .footer__content li {
   margin-bottom: 8px;
@@ -214,7 +208,6 @@ button a {
   }
   .header .logo {
     display: flex;
-    gap: 40%;
   }
   .main__page__image {
     height: 300px;

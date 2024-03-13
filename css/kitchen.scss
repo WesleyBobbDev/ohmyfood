@@ -202,8 +202,7 @@ button {
 }
 // Like Button End
 
-//Footer Start
-//Footer Start
+//Footer Start 
 .footer__container {
   background-color: #2d2d2d;
   color: $white;
@@ -211,18 +210,14 @@ button {
   padding: 20px;
 
   .footer__title {
-    font-family: "Shrikhand", sans-serif;
-    font-style: italic;
-    font-size: 1.125rem;
-
-    a {
-      text-decoration: none;
-      color: $white;
-    }
+    font-size: 20px;
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
   }
 
   .footer__content {
-    margin-top: 12px;
+
     li {
       margin-bottom: 8px;
     }
@@ -244,7 +239,6 @@ button {
   }
 }
 // Footer End
-// Footer End
 
 // Desktop Version
 @media screen and (min-width: 1024px) {
@@ -252,7 +246,6 @@ button {
     width: 100%;
     .logo {
       display: flex;
-      gap: 40%;
     }
   }
 

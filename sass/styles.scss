@@ -226,43 +226,48 @@ body{
           margin-bottom: 8px;
         }
       }
-      .btn{
-        font-size: 1.5rem;
-        transition: transform 800ms;
-        &:hover{
-            color: $primary--color;
-            background-clip: text;
-            background-clip: padding-box;
-            background-clip: border-box;
-            font-weight: bold;
-        }
-        &:active{
-            color: $primary--color;
-            background-clip: text;
-            background-clip: padding-box;
-            background-clip: border-box;
-            font-weight: bold;
-            transform: scale(1.25);
-        }
-    }
-
-    .heart__checkbox{
-        display: none;
-    }
-
-    .heart__checkbox:checked + .heart__label {
-        color: $primary--color;
-            background-clip: text;
-            background-clip: padding-box;
-            background-clip: border-box;
-            font-weight: bold;
-            transform: scale(1.25);
-      }
-
     }
   }
 }
 
+.btn {
+  font-size: 1.5rem;
+  transition: all 400ms;
+  &:hover {
+    background: linear-gradient(to top, $primary--color, $secondary--color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    animation: heart 600ms ease-in-out forwards;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heart__checkbox {
+  display: none;
+}
+
+.heart__checkbox:checked + .heart__label {
+  color: $primary--color;
+  background-clip: text;
+  background-clip: padding-box;
+  background-clip: border-box;
+  font-weight: bold;
+  transform: scale(1.25);
+}
+
+.menu-heart {
+  font-size: 1.35rem;
+}
 
 
 
@@ -276,10 +281,10 @@ body{
   padding: 20px;
 
   .footer__title {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Shrikhand', sans-serif;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .footer__content {
