@@ -1,0 +1,39 @@
+// Loading Circle
+.loading {
+  animation: Disappear 1s ease-out 1.6s;
+  animation-fill-mode: forwards;
+  background-color: white;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  .loading__circle::before {
+    z-index: 10;
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 4rem;
+    width: 4rem;
+    margin: -2.5rem -2.5rem;
+    border-radius: 50%;
+    border: 6px solid $primary--color;
+    border-top-color: $secondary--color;
+  }
+}
+
+@keyframes Disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+// Loading Circle end
