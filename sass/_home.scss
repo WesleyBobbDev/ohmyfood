@@ -114,6 +114,7 @@
     font-size: 1.125rem;
     font-weight: 800;
     margin: 24px 0;
+    font-family: 'Roberto', sans-serif;
   }
 }
 
@@ -213,6 +214,7 @@
 
     img {
       max-width: 200px;
+      width: 60%;
     }
   }
 
@@ -243,9 +245,12 @@
 @media screen and (min-width: 1024px) {
   .logo__header {
     width: 100%;
+ 
 
-    img {
-      max-width: 200px;
+   .logo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 

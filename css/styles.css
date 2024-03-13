@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 .logo__header .logo img {
-  width: 60%;
+  width: 40%;
   padding: 16px;
 }
 
@@ -201,6 +201,7 @@ body {
   font-size: 1.125rem;
   font-weight: 800;
   margin: 24px 0;
+  font-family: "Roberto", sans-serif;
 }
 
 .venue__container {
@@ -309,6 +310,7 @@ body {
   }
   .logo__header img {
     max-width: 200px;
+    width: 60%;
   }
   .explanation {
     padding: 30px;
@@ -342,8 +344,14 @@ body {
   .logo__header {
     width: 100%;
   }
-  .logo__header img {
-    max-width: 200px;
+  .logo__header .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .explanation {
     padding: 30px;
