@@ -663,6 +663,7 @@ button a {
   font-family: "Shrikhand", sans-serif;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 .footer__container .footer__content li {
   margin-bottom: 8px;
