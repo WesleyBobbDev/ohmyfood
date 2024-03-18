@@ -125,6 +125,9 @@ $white: white;
 
   &__description {
     padding: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &__price {
